@@ -1,0 +1,316 @@
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    width: 100%;
+    height: 100%;
+    overflow-x: hidden; 
+    font-family: Arial,  sans-serif;
+    background-image: url(background.jpeg);
+}
+
+
+
+
+
+.header {
+    background-color: #333;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+}
+
+.header h1 {
+    font-style: italic;
+    letter-spacing: 1px;
+    margin: 0;
+    font-size: 24px;    
+}
+
+.center {
+    font-size: 30px;
+    text-align: center;
+    background-image: url(background.jpeg);
+    color:white;
+    margin: 0;
+    padding: 40px 30px;
+}
+
+
+.nav {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.nav a {
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+}
+.nav span {
+color: white;
+font-size: 16px;
+
+
+}
+.nav a:hover {
+    text-decoration: underline;
+
+}
+
+a {
+    color: #3498db;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+.login {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    background-color:#333; 
+    padding: 10px 15px;
+    border-radius: 5px; 
+    color: #333; 
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); 
+    cursor: pointer;
+}
+
+
+.login-logo {
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+}
+
+.login-logo img {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+
+
+
+.content {
+    padding: 20px;
+}
+
+.content h2 {
+    margin-top: 0;
+}
+
+
+
+
+
+.carousel {
+
+    display: flex;
+    overflow: hidden;
+    position: relative;
+    width: 100%; 
+    height: 300px; 
+}
+
+.carousel-track {
+
+    display: flex;
+    animation: scroll 5s linear infinite; 
+}
+
+.carousel img {
+
+    object-fit: cover; /* Make images fit nicely */
+    width: 100%; /* Each image takes the full width of the viewport */
+    height: 500; /* Match the carousel height */
+}
+
+@keyframes scroll {
+    from {
+        transform: translateX(0); /* Start at the beginning */
+    }
+    to {
+        transform: translateX(-200px); /* Scroll through half of the images */
+    }
+}
+
+
+.shop-now {
+    background-color: #007bff;
+    color: white;
+    width: 100px;
+    padding: 10px;
+    text-align: center;
+    margin: 40px 870px; /* This centers the button horizontally */
+    border-radius: 10px;
+    cursor: pointer;
+    display: inline-block; /* Ensure proper size and clickable area */
+}
+
+
+.shop-now:hover {
+    background-color: rgb(81, 204, 235);
+}
+
+
+
+
+.why-choose-us {
+    display: flex;
+    padding: 20px;
+    gap: 20px;
+    background-color: #3c4949; /* Achtergrondkleur zoals in de afbeelding */
+    color:white;
+}
+
+.why-choose-us ul {
+    text-align: center;
+    list-style: none;
+    padding: 0;
+    margin: 0 auto; 
+}
+
+.why-choose-us li {
+    margin: 10px 0;
+    display: flex;
+    justify-content: center; /* Zorg dat tekst en vinkjes gecentreerd staan */
+    align-items: center;
+}
+
+.why-choose-us li::before {
+    content: "\2713"; /* Groene vinkjes */
+    color: green;
+    font-size: 35px;
+    margin-right: 10px;
+}
+
+
+
+
+
+.section-left, .section-right {
+    flex: 1;
+}
+
+.section-left h2, .section-right h2 {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.section-left p, .section-right p {
+    margin: 10px 0;
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+.stats {
+    display: flex;
+    justify-content: space-between;
+    margin: 20px 0;
+}
+
+.stats div {
+    border: 2px solid #000;
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 14px;
+    text-align: center;
+}
+
+.highlight {
+    font-size: 18px;
+    font-weight: bold;
+    color: #007BFF;
+    margin-top: 20px;
+}
+
+button {
+    padding: 10px 20px;
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+.section-right ul {
+    list-style: none;
+    padding: 0;
+}
+
+.section-right li {
+    margin-bottom: 10px;
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+.section-right li strong {
+    font-size: 18px;
+}
+
+.email-highlight {
+    background-color: #fffacd; /* Lichtgele highlight */
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.email-bar {
+    text-align: center;
+    margin: 20px 0;
+}
+
+.email-bar input {
+    padding: 10px;
+    width: 60%;
+    margin-right: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.email-bar button {
+    padding: 10px 20px;
+    background-color: #28a745;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.email-bar button:hover {
+    background-color: #218838;
+}
+
+.social-logos {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.social-logos img {
+    border-radius: 20px;
+    width: 40px;
+    margin: 0 10px;
+    cursor: pointer;
+}

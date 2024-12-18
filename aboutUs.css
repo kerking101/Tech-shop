@@ -1,0 +1,128 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    width: 100%;
+    height: 100%;
+    overflow-x: hidden;
+    font-family: Arial, sans-serif;
+    background-image: url(background.jpeg);
+    display: flex;
+    flex-direction: column;
+}
+
+
+.header {
+    background-color: #333;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+}
+
+.header h1 {
+    font-style: italic;
+    letter-spacing: 1px;
+    margin: 0;
+    font-size: 24px;
+}
+
+.nav {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.nav a, .nav span {
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+.nav a:hover {
+    text-decoration: underline;
+}
+
+a {
+    color: #3498db;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+
+.header-login {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    background-color: transparent; 
+    color: white;
+}
+
+.header-login .login-logo {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+}
+
+.header-login .login-logo img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+.about-container {
+    max-width: 1200px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: #3c4949;
+    color: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+}
+
+.about-container h2 {
+    font-size: 2em;
+    margin-bottom: 10px;
+    color: #78c2ad;
+}
+
+.about-container h3 {
+    font-size: 1.5em;
+    margin-top: 20px;
+    color: #78c2ad;
+}
+
+.about-container p {
+    font-size: 1.1em;
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+.about-container ul {
+    list-style: none;
+    padding-left: 0;
+    margin-bottom: 20px;
+}
+
+.about-container ul li {
+    font-size: 1.1em;
+    margin: 10px 0;
+    color: #7fffd4;
+}
+
+.about-cta a {
+    color: #3498db;
+    text-decoration: underline;
+}
+
+.about-cta a:hover {
+    color: #1f6696;
+}
